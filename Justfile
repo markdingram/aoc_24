@@ -1,5 +1,3 @@
-
-
 day1:
     #!/usr/bin/env bash
     set -euxo pipefail
@@ -12,4 +10,11 @@ day2:
     set -euxo pipefail
     cd day2
     cargo build --target wasm32-wasip2
-    wasmtime --dir=dat ./target/wasm32-wasip2/debug/aoc_24_day2.wasm 
+    wasmtime --dir=dat ./target/wasm32-wasip2/debug/aoc_24_day2.wasm
+
+day3:
+    #!/usr/bin/env bash
+    set -euxo pipefail
+    cd day3
+    cargo build --target wasm32-wasip2
+    wasmtime --dir=dat ./target/wasm32-wasip2/debug/aoc_24_day3.wasm
