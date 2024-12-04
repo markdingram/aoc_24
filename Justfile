@@ -18,3 +18,10 @@ day3:
     cd day3
     cargo build --target wasm32-wasip2
     wasmtime --dir=dat ./target/wasm32-wasip2/debug/aoc_24_day3.wasm
+
+day4:
+    #!/usr/bin/env bash
+    set -euxo pipefail
+    cd day4
+    cargo build --target wasm32-wasip2
+    wasmtime --dir=dat ./target/wasm32-wasip2/debug/aoc_24_day4.wasm
